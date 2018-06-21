@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/toolbar" android:background="@color/greentoolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" app:title="@string/app_name"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <ImageButton android:id="@+id/profile" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@mipmap/profile" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@+id/cart_item" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@mipmap/ic_shopping_cart" android:layout_toLeftOf="@+id/profile" android:layout_centerVertical="true" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@+id/textOne" android:background="@drawable/badge" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="3.0dip" android:layout_alignLeft="@+id/cart_item" android:layout_alignTop="@+id/cart_item" />
+    </RelativeLayout>
+    <android.support.v4.widget.DrawerLayout android:id="@+id/drawerLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <FrameLayout android:orientation="vertical" android:id="@+id/containerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <android.support.design.widget.NavigationView android:layout_gravity="start" android:id="@+id/shitstuff" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="-15.0dip" android:divider="@android:color/darker_gray" android:dividerHeight="1.0dip" android:choiceMode="singleChoice" app:menu="@menu/drawermenu" app:itemTextColor="@color/black"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

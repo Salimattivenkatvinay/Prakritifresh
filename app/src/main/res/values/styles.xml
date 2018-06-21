@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/holo_green_light</item>
+        <item name="colorPrimaryDark">@android:color/holo_green_dark</item>
+        <item name="colorControlNormal">#ffc5c5c5</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/orange</item>
+    </style>
+
+</resources>

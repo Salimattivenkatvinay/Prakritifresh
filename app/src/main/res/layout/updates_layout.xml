@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="30.0sp" android:textColor="@android:color/holo_red_light" android:gravity="center" android:id="@+id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="Updates\nFragment" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="15.0sp" android:textStyle="italic" android:textColor="#ff000000" android:autoLink="web" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="androidbelieve.com" android:layout_below="@+id/textView" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="5.0dip">
+
+    <TextView
+        android:id="@+id/vegname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5.0dip"
+        android:textSize="14.0sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imgrid1"
+            android:layout_width="120.0dip"
+            android:layout_height="120.0dip"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/imout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgrid"
+            android:layout_alignTop="@+id/imgrid"
+            android:src="@mipmap/outofstock" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/prc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8.0dip"
+            android:textColor="@color/green"
+            android:textSize="12.0sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/fav1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:src="@mipmap/favourite_not" />
+
+            <ImageButton
+                android:id="@+id/add_to_cart1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:src="@mipmap/vegetable_space" />
+
+            <ImageButton
+                android:id="@+id/about1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:src="@mipmap/about" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

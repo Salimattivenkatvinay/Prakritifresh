@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/orange" android:layout_gravity="center" android:id="@+id/billdetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="MY BILLING DETAILS" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold|italic" android:textColor="#ff000000" android:id="@+id/nametext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name*:" />
+        <EditText android:id="@+id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Type your name here" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold|italic" android:textColor="#ff000000" android:id="@+id/addresstext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Address*:" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textStyle="italic" android:textColor="#ff000000" android:id="@+id/landmarktext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Landmark*:" />
+            <EditText android:id="@+id/landmark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Nearest Landmark" />
+        </LinearLayout>
+        <EditText android:id="@+id/address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Type your address here" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold|italic" android:textColor="#ff000000" android:id="@+id/pintext" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pincode*:" />
+        <EditText android:id="@+id/pin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Enter the 6 digit pincode here" android:maxLength="6" android:digits="\ 0123456789" android:inputType="number" />
+        <WebView android:textStyle="bold" android:layout_gravity="center" android:id="@+id/success" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:layout_gravity="center" android:id="@+id/cont" android:background="@drawable/custbutton" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="Continue Shopping" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold|italic" android:textColor="#ff000000" android:id="@+id/mobtext" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mobile Number*:" />
+        <EditText android:id="@+id/mob" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:hint="Enter your 10 digit mobile number here" android:maxLength="10" android:digits="\ 0123456789" android:inputType="number" />
+        <Button android:layout_gravity="center_horizontal" android:id="@+id/confirm" android:background="@drawable/custbutton" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="Confirm Order" />
+    </LinearLayout>
+</ScrollView>

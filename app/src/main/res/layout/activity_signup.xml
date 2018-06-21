@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/green"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24.0dip"
+        android:paddingRight="24.0dip"
+        android:paddingTop="10.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0.0dip"
+                android:layout_height="50.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_weight="1.0"
+                android:src="@mipmap/prakritifresh_logo" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="3.0"
+                android:paddingBottom="10.0dip"
+                android:text="Prakritifresh"
+                android:textColor="@color/white"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_weight="1.0"
+                android:paddingRight="10.0dip"
+                android:textColorHint="#ffffffff">
+
+                <EditText
+                    android:id="@+id/input_fname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:maxLength="100"
+                    android:textColor="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_weight="1.0"
+                android:textColorHint="#ffffffff">
+
+                <EditText
+                    android:id="@+id/input_lname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:maxLength="100"
+                    android:textColor="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emaili"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:textColorHint="#ffffffff">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLength="100"
+                android:textColor="@color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:textColorHint="#ffffffff">
+
+            <EditText
+                android:id="@+id/input_password1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLength="100"
+                android:textColor="@color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/cpassi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:textColorHint="#ffffffff">
+
+            <EditText
+                android:id="@+id/input_password2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:maxLength="100"
+                android:textColor="@color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/mobi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:textColorHint="#ffffffff">
+
+            <EditText
+                android:id="@+id/input_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:hint="Phone No."
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingRight="10.0dip"
+                android:text="ADDRESS"
+                android:textColor="@color/white"
+                android:textSize="15.0sp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:textColorHint="#ffffffff">
+
+                <EditText
+                    android:id="@+id/input_plot"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:hint="Plot no"
+                    android:maxLength="100"
+                    android:paddingRight="10.0dip"
+                    android:textColor="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:textColorHint="#ffffffff">
+
+                <EditText
+                    android:id="@+id/input_street"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Street"
+                    android:maxLength="100"
+                    android:textColor="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:maxLength="100"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_weight="1.0"
+                android:textColorHint="#ffffffff">
+
+                <EditText
+                    android:id="@+id/input_landmark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Landmark"
+                    android:maxLength="100"
+                    android:paddingRight="10.0dip"
+                    android:textColor="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_weight="1.0"
+                android:textColorHint="#ffffffff">
+
+                <EditText
+                    android:id="@+id/input_state"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="State"
+                    android:maxLength="100"
+                    android:textColor="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_weight="2.0"
+                android:textColorHint="#ffffffff">
+
+                <EditText
+                    android:id="@+id/input_city"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City"
+                    android:maxLength="100"
+                    android:paddingRight="10.0dip"
+                    android:textColor="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pincodes"
+                    android:textColor="@color/white" />
+
+                <RadioGroup
+                    android:id="@+id/input_pincode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/radio_1"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_2"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24.0dip"
+            android:background="@color/orange"
+            android:padding="12.0dip"
+            android:text="SIGNUP" />
+
+        <TextView
+            android:id="@+id/gologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="80.0dip"
+            android:clickable="true"
+            android:padding="12.0dip"
+            android:text="Already registered, login here"
+            android:textColor="@color/white"
+            android:textSize="20.0dip" />
+    </LinearLayout>
+</ScrollView>

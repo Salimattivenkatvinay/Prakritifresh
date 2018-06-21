@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:layout_gravity="center" android:id="@+id/namecart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="test" />
+        <ImageView android:id="@+id/flag1" android:padding="2.0dip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/logo1_de" android:contentDescription="Hello" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:layout_gravity="center" android:id="@+id/pricecart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="test" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:padding="30.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@+id/unt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Order Unit" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:id="@+id/unit1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/removeit" android:background="@null" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_remove_circle" />
+            <TextView android:textSize="15.0sp" android:id="@+id/nfunit" android:paddingLeft="2.0dip" android:paddingTop="4.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+            <ImageButton android:id="@+id/addit" android:background="@null" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_add_circle" />
+        </LinearLayout>
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@+id/txtqt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="0" />
+    </LinearLayout>
+    <ImageButton android:id="@+id/cart1" android:background="@drawable/custbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:src="@mipmap/ic_delete" />
+</LinearLayout>
